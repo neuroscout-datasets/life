@@ -2,4 +2,4 @@
 	id = 1ca8af2c-7d52-11e8-8fa8-a0369f7c647e
 [datalad "containers.fmriprep"]
 	image = inputs/fmriprep/container.simg
-	cmdexec = singularity exec --bind {{pwd}} {img} {cmd}
+	cmdexec = singularity exec --bind {{freesurferpath}}:/freesurfer --bind {{pwd}} {img} {cmd}
